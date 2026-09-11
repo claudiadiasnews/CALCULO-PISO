@@ -50,11 +50,26 @@ h1{font-size:0;line-height:0;margin:0;height:0;overflow:hidden}
 @media(max-width:900px){.top{grid-template-columns:1fr;min-height:0;gap:22px}.top:after{grid-column:1;grid-row:2;min-height:260px}.top:before{display:none}.top>div:first-child{min-height:330px}.badge{position:static;align-self:flex-start;margin-top:20px}.grid{grid-template-columns:1fr}}
 @media(max-width:560px){.shell{padding:20px 14px 42px}.top{display:flex;flex-direction:column;margin-bottom:34px}.top>div:first-child{order:1;min-height:0;padding-bottom:0}.top>div:first-child:after{font-size:56px;margin-top:34px}.badge{order:2;position:static;display:inline-block;align-self:flex-start;margin-top:24px;white-space:normal}.top:after{order:3;min-height:260px}.lead{font-size:17px}.card{padding:18px}.summary{grid-template-columns:1fr 1fr}}
 @media print{.top:after,.top:before{display:none}.top{display:block;min-height:auto}.top>div:first-child:after{font-size:54px;margin-top:40px}}
-.register-launch{margin-top:24px;display:flex;justify-content:center}.register-launch button{min-width:260px}.registration-card{position:relative}.registration-card .register-close{position:absolute;top:20px;right:20px}.registration-card[hidden]{display:none}.register-heading{padding-right:90px}@media(max-width:560px){.register-launch button{width:100%;min-width:0}.registration-card .register-close{position:static;margin:0 0 12px}.register-heading{padding-right:0}} </style>
+.register-launch{margin-top:24px;display:flex;justify-content:center}.register-launch button{min-width:260px}.registration-card{position:relative}.registration-card .register-close{position:absolute;top:20px;right:20px}.registration-card[hidden]{display:none}.register-heading{padding-right:90px}@media(max-width:560px){.register-launch button{width:100%;min-width:0}.registration-card .register-close{position:static;margin:0 0 12px}.register-heading{padding-right:0}} 
+/* Cabeçalho restaurado conforme a referência visual enviada */
+body{background:linear-gradient(140deg,#edf7f7 0%,#f7f9fb 50%,#eef3f5 100%);color:#17212b;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif}
+.shell{max-width:1240px;padding:28px 20px 56px}
+.top{position:relative;display:flex;justify-content:space-between;gap:24px;align-items:flex-start;min-height:0;margin-bottom:22px;padding:0}
+.top>div:first-child{display:block;padding:0;position:static}
+.top>div:first-child:after{content:none}
+.eyebrow{font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:800;color:#0e6071}
+.eyebrow:before{content:none}
+h1{display:block;font-size:clamp(28px,4vw,44px);line-height:1.05;margin:8px 0 10px;height:auto;overflow:visible;letter-spacing:-.04em}
+.lead{font-size:16px;line-height:1.45;color:#5d6b78;max-width:720px;margin:0}
+.badge{position:static;display:block;align-self:flex-start;background:#d9f2ef;color:#005d2b;border-radius:999px;padding:10px 16px;font-weight:800;font-size:13px;white-space:nowrap;margin:0}
+.top:after{display:none;content:none}
+@media(max-width:900px){.top{display:block;min-height:0}.top>div:first-child{padding-bottom:70px}.badge{display:inline-block;margin-top:-54px;position:relative}}
+@media(max-width:560px){.top{display:flex;flex-direction:column;margin-bottom:34px}.top>div:first-child{order:1;min-height:0;padding-bottom:0}.badge{order:2;position:static;display:inline-block;align-self:flex-start;margin-top:24px;white-space:normal}.lead{font-size:17px}}
+</style>
 </head>
 <body>
 <main class="shell">
-<header class="top"><div><div class="eyebrow">Obra mais previsível</div><h1>Calculadora de quantidade de piso</h1><p class="lead">Converta a área do ambiente em uma lista de compra clara para piso, rodapé e materiais de instalação — com perdas transparentes e resultado pronto para conferência.</p></div><div class="badge">Piso bonito começa com um bom cálculo</div></header>
+<header class="top"><div><div class="eyebrow">Obra mais previsível</div><h1>Calculadora de quantidade de piso</h1><p class="lead">Converta a área do ambiente em uma lista de compra clara para piso, rodapé e materiais de instalação — com perdas transparentes e resultado pronto para conferência.</p></div><div class="badge">Baseada na planilha fornecida</div></header>
 <section class="grid">
 <aside class="card" aria-labelledby="input-title"><h2 class="panel-title" id="input-title">1. Informe o ambiente <small>Campos obrigatórios</small></h2>
 <div class="field"><label for="model">Modelo do piso</label><select id="model" aria-describedby="model-help"></select><div class="helper" id="model-help">Escolha o produto que será instalado.</div></div>
